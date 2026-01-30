@@ -1,0 +1,14 @@
+{
+  "AT": {
+    "name": "Austria",
+    "code": "de_AT",
+    "searchEndpoint": "https://www.mydpd.at/jws.php/parcel/search",
+    "verifyEndpoint": "https://www.mydpd.at/jws.php/parcel/verify"
+  },
+  "DE": {
+    "name": "Germany",
+    "code": "de_DE",
+    "searchEndpoint": "https://www.mydpd.at/jws.php/parcel/search",
+    "verifyEndpoint": "https://www.mydpd.at/jws.php/parcel/verify"
+  }
+}

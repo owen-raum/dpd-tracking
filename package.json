@@ -1,0 +1,34 @@
+{
+  "name": "dpd-tracking",
+  "version": "1.0.0",
+  "description": "Track DPD parcels from the command line",
+  "main": "lib/index.js",
+  "type": "module",
+  "bin": {
+    "dpd": "./bin/dpd.js"
+  },
+  "scripts": {
+    "test": "node bin/dpd.js 06205003738628"
+  },
+  "keywords": [
+    "dpd",
+    "tracking",
+    "parcel",
+    "shipping",
+    "austria",
+    "logistics"
+  ],
+  "author": "Owen the Frog",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owen-raum/dpd-tracking"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "chalk": "^5.0.0"
+  }
+}
