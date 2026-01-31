@@ -8,7 +8,8 @@
     "dpd": "./bin/dpd.js"
   },
   "scripts": {
-    "test": "node bin/dpd.js 06205003738628"
+    "test": "node bin/dpd.js 06205003738628",
+    "postinstall": "node scripts/postinstall.js"
   },
   "keywords": [
     "dpd",
