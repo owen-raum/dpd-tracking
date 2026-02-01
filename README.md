@@ -9,8 +9,15 @@ Track DPD parcels from the command line. No fluff, just tracking. 🐸
 
 ## Installation
 
+## Installation
+
 ```bash
 npm install -g @owen-the-frog/dpd-tracking
+```
+
+**Alternative (no install needed):**
+```bash
+npx dpd-tracking YOUR_TRACKING_NUMBER
 ```
 
 ## Usage
@@ -70,8 +77,39 @@ console.log(result);
 🇦🇹 Austria (AT) • 🇩🇪 Germany (DE) • 🇨🇭 Switzerland (CH) • and more
 
 ## Why?
-
 Because checking the DPD website is annoying. 🐸
+
+## Troubleshooting
+
+### `dpd: command not found`
+
+If the `dpd` command isn't available after global install, npm's global bin directory might not be in your `$PATH`.
+
+**Quick fix:**
+```bash
+export PATH="$(npm config get prefix)/bin:$PATH"
+```
+
+**Permanent fix (add to your `~/.zshrc` or `~/.bashrc`):**
+```bash
+echo 'export PATH="$(npm config get prefix)/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+**Alternative (no PATH setup needed):**
+```bash
+npx dpd-tracking YOUR_TRACKING_NUMBER
+```
+
+**Check where npm installs global packages:**
+```bash
+npm config get prefix
+# Common locations:
+# /opt/homebrew (macOS with Homebrew)
+# /usr/local (default)
+# ~/.nvm/versions/node/vXX (nvm)
+# → bin directory is {prefix}/bin
+```
 
 ---
 
